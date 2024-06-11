@@ -1,7 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useRef } from "react";
-import Lenis from "Lenis";
+
 import picture1 from "@/public/images/c2montreal.png";
 import picture2 from "@/public/images/locomotive.png";
 import picture3 from "@/public/images/officestudio.png";
@@ -9,17 +9,6 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { SliderProps } from "@/types";
 
 const MovingText = () => {
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: any) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-  }, []);
-
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
