@@ -7,10 +7,12 @@ import Magnetic from "../Magnetic";
 export default function Rounded({
   children,
   backgroundColor = "#455CE9",
+  className,
   ...attributes
 }: {
   children: any;
   backgroundColor?: string;
+  className?: any;
 }) {
   const circle = useRef<null | any>(null);
   let timeline = useRef<null | any>(null);
