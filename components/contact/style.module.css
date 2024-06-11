@@ -6,12 +6,16 @@
   justify-content: center;
   background-color: #141516;
   position: relative;
+  overflow: hidden;
 }
 .contact .body {
   padding-top: 200px;
   width: 100%;
   max-width: 1800px;
   background-color: #141516;
+  @media screen and (max-width: 800px) {
+    padding-top: 100px;
+  }
 }
 .contact .body .title {
   border-bottom: 1px solid #868686;
@@ -19,6 +23,10 @@
   margin-left: 200px;
   margin-right: 200px;
   position: relative;
+  @media screen and (max-width: 800px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .contact .body .title span {
   display: flex;
@@ -30,6 +38,10 @@
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 .contact .body .title span .imageContainer img {
   object-fit: cover;
@@ -41,11 +53,18 @@
   font-size: 5vw;
   margin: 0px;
   font-weight: 300;
+  @media screen and (max-width: 800px) {
+    font-size: 10vw;
+  }
 }
 .contact .body .title .buttonContainer {
   position: absolute;
   left: calc(100% - 400px);
   top: calc(100% - 75px);
+  @media screen and (max-width: 800px) {
+    left: calc(100% - 250px);
+    top: calc(100% - 75px);
+  }
 }
 .contact .body .title .button {
   width: 180px;
@@ -58,6 +77,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  @media screen and (max-width: 800px) {
+    width: 90px;
+    height: 90px;
+  }
 }
 .contact .body .title .button p {
   margin: 0px;
@@ -65,11 +88,17 @@
   font-weight: 300;
   z-index: 2;
   position: relative;
+  @media screen and (max-width: 800px) {
+    font-size: 8px;
+  }
 }
 .contact .body .title svg {
   position: absolute;
   top: 30%;
   left: 100%;
+  @media screen and (max-width: 800px) {
+    left: 90%;
+  }
 }
 .contact .body .nav {
   display: flex;
@@ -77,12 +106,21 @@
   margin-top: 100px;
   margin-left: 200px;
   margin-right: 200px;
+  @media screen and (max-width: 800px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
+
 .contact .body .info {
   display: flex;
   justify-content: space-between;
   margin-top: 200px;
   padding: 20px;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 50px;
+  }
 }
 .contact .body .info div {
   display: flex;

@@ -15,8 +15,8 @@ const MovingText = () => {
     offset: ["start end", "end start"],
   });
   return (
-    <main className="overflow-hidden">
-      <div className="h-[60vh]" />
+    <main className="overflow-hidden ">
+      <div className="h-[30vh] max-sm:h-[15vh]" />
       <div ref={containerRef}>
         <Slider
           src={picture1}
@@ -37,7 +37,7 @@ const MovingText = () => {
           direction="left"
         />
       </div>
-      <div className="h-[50vh]" />
+      <div className="h-[50vh] max-sm:h-[10vh]" />
     </main>
   );
 };
@@ -59,8 +59,8 @@ const Slider = ({ src, left, progress, direction }: SliderProps) => {
 const Phrase = ({ src }: { src: StaticImageData }) => {
   return (
     <div className={"px-5 max-sm:px-0 max-sm:gap-1 flex gap-5 items-center"}>
-      <p className="text-[7.5vw] max-sm:text-[40px]">Front End Developer</p>
-      <span className="relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden">
+      <p className="text-[7.5vw] max-sm:text-[50px]">Front End Developer</p>
+      <span className="relative h-[7.5vw] aspect-[4/2] max-sm:aspect-[4/1] rounded-full overflow-hidden">
         <Image style={{ objectFit: "cover" }} src={src} alt="image" fill />
       </span>
     </div>

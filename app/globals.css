@@ -17,7 +17,12 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  /* overflow: hidden; */
+  cursor: wait;
 }
 /* body {
   color: rgb(var(--foreground-rgb));
