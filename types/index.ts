@@ -12,3 +12,13 @@ export type ProjectProps = {
   title: string;
   setModal: (modal: { active: boolean; index: number }) => void;
 };
+
+export interface LinkProps {
+  data: {
+    title: string;
+    href: string;
+    index: number;
+  };
+  isActive: boolean;
+  setSelectedIndicator: (href: string) => void;
+}

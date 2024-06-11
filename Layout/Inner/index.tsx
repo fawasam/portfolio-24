@@ -15,7 +15,6 @@ const Inner = ({
       variants,
     };
   };
-
   const opacity = {
     initial: {
       opacity: 0,
@@ -30,7 +29,6 @@ const Inner = ({
       opacity: 1,
     },
   };
-
   const slide = {
     initial: {
       y: "100vh",
@@ -46,7 +44,6 @@ const Inner = ({
       },
     },
   };
-
   const perspective = {
     initial: {
       scale: 1,
@@ -77,6 +74,14 @@ const Inner = ({
         {children}
       </motion.div>
     </div>
+  );
+};
+
+const SVG = () => {
+  return (
+    <svg>
+      <path d=""></path>
+    </svg>
   );
 };
 

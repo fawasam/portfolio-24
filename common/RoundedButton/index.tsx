@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { useEffect, useRef } from "react";
 import styles from "./style.module.css";
@@ -14,8 +15,8 @@ export default function Rounded({
   backgroundColor?: string;
   className?: any;
 }) {
-  const circle = useRef<null | any>(null);
-  let timeline = useRef<null | any>(null);
+  const circle = useRef<any>();
+  let timeline = useRef<any>();
   let timeoutId: any = null;
   useEffect(() => {
     timeline.current = gsap.timeline({ paused: true });
