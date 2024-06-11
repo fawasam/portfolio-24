@@ -1,12 +1,8 @@
 "use client";
 import React from "react";
 import styles from "./style.module.css";
+import { ProjectProps } from "@/types";
 
-type ProjectProps = {
-  index: number;
-  title: string;
-  setModal: (modal: { active: boolean; index: number }) => void;
-};
 export default function Project({ index, title, setModal }: ProjectProps) {
   return (
     <div

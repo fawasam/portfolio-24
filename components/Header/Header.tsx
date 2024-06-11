@@ -8,7 +8,7 @@ export default function Header() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <>
+    <div>
       <div
         onClick={() => {
           setIsActive(!isActive);
@@ -20,6 +20,6 @@ export default function Header() {
         ></div>
         <AnimatePresence mode="wait"> {isActive && <Nav />}</AnimatePresence>
       </div>
-    </>
+    </div>
   );
 }

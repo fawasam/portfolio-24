@@ -6,7 +6,7 @@ import Modal from "./Modal";
 
 const projects = [
   {
-    title: "C2 Montreal",
+    title: "My Degree",
     src: "c2montreal.png",
     color: "#000000",
   },
@@ -33,6 +33,9 @@ export default function Gallery() {
   return (
     <main className={styles.main}>
       <div className={styles.gallery}>
+        <div className="text-left">
+          <h1 className="text-4xl items-left">Projects</h1>
+        </div>
         {projects.map((project, index) => {
           return (
             <Project

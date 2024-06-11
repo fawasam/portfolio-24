@@ -56,12 +56,18 @@ export default function Nav() {
               ></NavLink>
             );
           })}
+          <div className={styles.footer2}>
+            <a>LinkedIn</a>
+            {/* <a>Awwwards</a> */}
+            <a>Instagram</a>
+            {/* <a>Dribble</a> */}
+          </div>
         </div>
         <div className={styles.footer}>
+          <a>LinkedIn</a>
           <a>Awwwards</a>
           <a>Instagram</a>
           <a>Dribble</a>
-          <a>LinkedIn</a>
         </div>
       </div>
     </motion.div>

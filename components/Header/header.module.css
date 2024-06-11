@@ -1,6 +1,7 @@
 .button {
   position: fixed;
   right: 0px;
+  top: 0px;
   margin: 20px;
   z-index: 2;
   width: 80px;
@@ -15,6 +16,7 @@
 
 .burger {
   width: 100%;
+  z-index: 100;
   &::after,
   &::before {
     content: "";
@@ -59,11 +61,16 @@
 
   .body {
     box-sizing: border-box;
+    width: 100%;
     height: 100%;
-    padding: 100px;
+    padding: 20px 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      width: 300px;
+      padding: 10px 50px;
+    }
 
     .nav {
       display: flex;
@@ -91,7 +98,18 @@
     width: 100%;
     justify-content: space-between;
     font-size: 12px;
-    gap: 40px;
+    gap: 20px;
+    /* margin-bottom: 40px; */
+  }
+  .footer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 20px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
