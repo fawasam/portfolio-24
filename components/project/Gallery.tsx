@@ -5,29 +5,7 @@ import Project from "./Project";
 import Modal from "./Modal";
 import Rounded from "@/common/RoundedButton";
 import Link from "next/link";
-
-const projects = [
-  {
-    title: "My Degree",
-    src: "c2montreal.png",
-    color: "#000000",
-  },
-  {
-    title: "Office Studio",
-    src: "officestudio.png",
-    color: "#8C8C8C",
-  },
-  {
-    title: "Locomotive",
-    src: "locomotive.png",
-    color: "#EFE8D3",
-  },
-  {
-    title: "Silencio",
-    src: "silencio.png",
-    color: "#706D63",
-  },
-];
+import { projects } from "@/data/Projects";
 
 export default function Gallery() {
   const [modal, setModal] = useState({ active: false, index: 0 });
