@@ -83,7 +83,7 @@ export default function Contact() {
             </span>
           </div>
           <div>
-            <span>
+            <span className="max-sm:hidden">
               <h3>socials</h3>
               <Magnetic>
                 <p>fawasam</p>
