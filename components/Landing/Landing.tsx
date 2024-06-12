@@ -41,7 +41,12 @@ export default function Landing() {
 
   return (
     <main className={styles.main}>
-      <Image src="/images/background.jpg" fill={true} alt="background" />
+      <Image
+        src="/images/background.jpg"
+        fill={true}
+        alt="background"
+        className="brightness-[30%] object-cover w-full h-screen"
+      />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Freelance Developer -</p>

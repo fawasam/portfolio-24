@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 export interface SliderProps {
   src: StaticImageData;
+  text: string;
   left: string;
   progress: any;
   direction: "left" | "right";
