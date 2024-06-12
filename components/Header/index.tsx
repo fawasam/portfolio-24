@@ -35,11 +35,8 @@ export default function NavHeader() {
           });
         },
         onEnterBack: () => {
-          gsap.to(
-            button.current,
-            { scale: 0, duration: 0.25, ease: "power1.out" },
-            setIsActive(false)
-          );
+          gsap.to(button.current, 0.25, { scale: 0, ease: "power1.out" });
+          setIsActive(false);
         },
       },
     });
