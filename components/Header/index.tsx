@@ -18,7 +18,7 @@ export default function NavHeader() {
 
   useEffect(() => {
     if (isActive) setIsActive(false);
-  }, [pathname]);
+  }, [pathname, isActive]);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);

@@ -9,11 +9,13 @@ export default function Rounded({
   children,
   backgroundColor = "#455CE9",
   className,
+  onClick,
   ...attributes
 }: {
   children: any;
   backgroundColor?: string;
   className?: any;
+  onClick?: any;
 }) {
   const circle = useRef<any>();
   let timeline = useRef<any>();
