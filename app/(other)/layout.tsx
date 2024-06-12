@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "I am a Calicut-based UX/UI designer and Software developer with an MSc in Computer Science.",
 
   icons: {
-    icon: `/imagess/logo.png`,
+    icon: `/images/logo.png`,
   },
 };
 const PageTransitionLayout = ({ children }: { children: React.ReactNode }) => {

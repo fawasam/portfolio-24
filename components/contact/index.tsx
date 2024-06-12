@@ -65,7 +65,7 @@ export default function Contact() {
             </p>
           </Rounded>
           <Rounded>
-            <p className="max-sm:text-[10px] text-[25px]">
+            <p className="max-sm:text-[10px] text-[25px] py-4 max-sm:py-0">
               {" "}
               <AnimatedTextWord text=" +919645885706" />
             </p>

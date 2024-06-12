@@ -67,7 +67,7 @@ const Inner = ({
     <div className="inner ">
       <motion.div
         {...anim(slide)}
-        className="fixed top-0 left-0 w-[100vw] h-[100vh] bg-red-500 z-3"
+        className="fixed top-0 left-0 w-[100vw] h-[100vh]  z-3"
       />
       <motion.div {...anim(perspective)} />
       <motion.div className="page" {...anim(opacity)}>

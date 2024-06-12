@@ -6,6 +6,7 @@ import Contact from "@/components/contact";
 import Link from "next/link";
 import Magnetic from "@/common/Magnetic";
 import NameHeader from "@/components/Header/Name";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 

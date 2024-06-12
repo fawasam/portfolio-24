@@ -43,7 +43,7 @@
   object-fit: cover;
 }
 .slidingImages .circleContainer {
-  background-color: red;
+  /* background-color: red; */
   position: relative;
   margin-top: 100px;
 }
