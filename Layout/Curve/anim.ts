@@ -15,7 +15,11 @@ export const text = {
   },
 };
 
-export const curve = (initialPath, targetPath) => {
+interface ICurve {
+  initialPath: any;
+  targetPath: any;
+}
+export const curve = (initialPath: any, targetPath: any) => {
   return {
     initial: {
       d: initialPath,

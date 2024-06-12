@@ -1,17 +1,17 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { text, curve, translate } from "./anim";
 
-const routes = {
+const routes: { [key: string]: string } = {
   "/": "Home",
   "/work": "Work",
   "/about": "About",
   "/contact": "Contact",
 };
 
-const anim = (variants) => {
+const anim = (variants: any) => {
   return {
     variants,
     initial: "initial",
@@ -20,9 +20,13 @@ const anim = (variants) => {
   };
 };
 
-export default function Curve({ children, backgroundColor }) {
-  const router = useRouter();
-  const [dimensions, setDimensions] = useState({
+type CurveProps = {
+  children: any;
+  backgroundColor: string;
+};
+export default function Curve({ children, backgroundColor }: CurveProps) {
+  const router = usePathname();
+  const [dimensions, setDimensions] = useState<any>({
     width: null,
     height: null,
   });
@@ -48,7 +52,7 @@ export default function Curve({ children, backgroundColor }) {
         className="background"
       />
       <motion.p className="route" {...anim(text)}>
-        {routes[router.route]}
+        {routes[router]}
       </motion.p>
       {dimensions.width != null && <SVG {...dimensions} />}
       {children}
@@ -56,7 +60,7 @@ export default function Curve({ children, backgroundColor }) {
   );
 }
 
-const SVG = ({ height, width }) => {
+const SVG = ({ height, width }: { height: number; width: number }) => {
   const initialPath = `
         M0 300 
         Q${width / 2} 0 ${width} 300
