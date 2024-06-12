@@ -16,6 +16,11 @@
   }
 }
 
+@layer utilities {
+  .text-show {
+    @apply mx-1 px-1  text-white rounded-lg;
+  }
+}
 body {
   /* height: 100vh; */
   padding: 0px;

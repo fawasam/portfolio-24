@@ -1,6 +1,4 @@
-import Rounded from "@/common/RoundedButton";
 import DetailesCard from "@/components/Cards/DetailsCard";
-import WorkComponent from "@/components/work";
 import React from "react";
 
 let myDatas = [

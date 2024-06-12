@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "./anim";
 import NavLink from "./Link";
+import { socials } from "@/data/Socials";
+import Link from "next/link";
 
 const navItems = [
   {
@@ -64,10 +66,11 @@ export default function Nav() {
           </div>
         </div>
         <div className={styles.footer}>
-          <a>LinkedIn</a>
-          <a>Awwwards</a>
-          <a>Instagram</a>
-          <a>Dribble</a>
+          {socials.map((data, index) => (
+            <Link href={data.href} target="_blank" key={index}>
+              {data.title}
+            </Link>
+          ))}
         </div>
       </div>
     </motion.div>
