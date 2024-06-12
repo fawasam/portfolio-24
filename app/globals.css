@@ -18,7 +18,7 @@
 
 @layer utilities {
   .text-show {
-    @apply mx-1 px-1  text-white rounded-lg;
+    @apply mx-[4px] px-[1px]  text-white;
   }
 }
 body {

@@ -35,7 +35,7 @@ export default function Descriptinon() {
         <div data-scroll data-scroll-speed={0.1}>
           <Link href={"/about"}>
             <Rounded className={styles.button}>
-              <p>About me</p>
+              <p className="text-xl">About me 🧑🏻‍💻</p>
             </Rounded>
           </Link>
         </div>

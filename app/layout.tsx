@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Contact from "@/components/contact";
+import Link from "next/link";
+import Magnetic from "@/common/Magnetic";
+import NameHeader from "@/components/Header/Name";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +15,7 @@ export const metadata: Metadata = {
     "I am a Calicut-based UX/UI designer and Software developer with an MSc in Computer Science.",
 
   icons: {
-    icon: `/imagess/logo.png`,
+    icon: `/images/logo.png`,
   },
   openGraph: {
     type: "website",
@@ -50,9 +53,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <NavHeader /> */}
+      <NameHeader color="black" />
       <Header />
-
       <body className={inter.className}>{children}</body>
       <Contact />
     </html>

@@ -1,3 +1,5 @@
+import NameHeader from "@/components/Header/Name";
+
 export const metadata = {
   title: "Work -Fawas am",
   description:
@@ -9,7 +11,11 @@ export const metadata = {
 };
 
 const WorkLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div>{children}</div>;
+  return (
+    <>
+      <div>{children}</div>
+    </>
+  );
 };
 
 export default WorkLayout;

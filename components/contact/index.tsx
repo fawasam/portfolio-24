@@ -7,6 +7,7 @@ import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import Magnetic from "../../common/Magnetic";
 import { socials } from "@/data/Socials";
 import Link from "next/link";
+import AnimatedTextWord from "@/common/TextAnimation";
 
 export default function Contact() {
   const container = useRef(null);
@@ -25,12 +26,21 @@ export default function Contact() {
             <div className={styles.imageContainer}>
               <Image fill={true} alt={"image"} src={`/images/background.jpg`} />
             </div>
-            <h2>Let&apos;s work</h2>
+            <h2>
+              <AnimatedTextWord text="Let's work" />
+            </h2>
           </span>
-          <h2>together</h2>
+
+          <h2>
+            {" "}
+            <AnimatedTextWord text="together" />
+          </h2>
           <motion.div className={styles.buttonContainer}>
             <Rounded backgroundColor={"#334BD3"} className={styles.button}>
-              <p className="">Get in touch</p>
+              <p className="text-[20px]">
+                {" "}
+                <AnimatedTextWord text="Get in touch" />
+              </p>
             </Rounded>
           </motion.div>
           <motion.svg
@@ -49,10 +59,16 @@ export default function Contact() {
         </div>
         <div className={styles.nav}>
           <Rounded>
-            <p className="max-sm:text-[10px]">mynamefawas@gmail.com</p>
+            <p className="max-sm:text-[10px] text-[25px]">
+              {" "}
+              <AnimatedTextWord text="mynamefawas@gmail.com" />
+            </p>
           </Rounded>
           <Rounded>
-            <p className="max-sm:text-[10px]">+919645885706</p>
+            <p className="max-sm:text-[10px] text-[25px]">
+              {" "}
+              <AnimatedTextWord text=" +919645885706" />
+            </p>
           </Rounded>
         </div>
         <div className={styles.info}>
