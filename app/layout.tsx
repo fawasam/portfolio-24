@@ -11,6 +11,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fawasam.me/"),
   title: "Fawas am",
   description:
     "I am a Calicut-based UX/UI designer and Software developer with an MSc in Computer Science.",

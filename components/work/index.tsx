@@ -13,13 +13,13 @@ const WorkComponent = () => {
             href={project.link}
             target="_blank"
             key={index}
-            className=" items-center"
+            className=" items-center overflow-hidden "
           >
             <div className="col-span-2">
               <Image
                 src={`/images/websites/${project.src}`}
                 alt={project.title}
-                className="w-full h-[300px] object-cover"
+                className="w-full h-[300px] object-cover  hover:scale-110 transition ease-in-out hover:brightness-[90%]"
                 width={500}
                 height={500}
               />

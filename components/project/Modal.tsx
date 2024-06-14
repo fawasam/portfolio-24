@@ -98,6 +98,7 @@ export default function Modal({ modal, projects }: ModalProps) {
             const { src, color } = project;
             return (
               <div
+                // href={"/work"}
                 className={styles.modal}
                 style={{ backgroundColor: color }}
                 key={`modal_${index}`}
@@ -114,7 +115,7 @@ export default function Modal({ modal, projects }: ModalProps) {
         </div>
       </motion.div>
 
-      <Link href={"/link"}>
+      {/* <Link href={"/work"}>
         <motion.div
           ref={cursor}
           className={styles.cursor}
@@ -132,7 +133,7 @@ export default function Modal({ modal, projects }: ModalProps) {
         >
           View
         </motion.div>
-      </Link>
+      </Link> */}
     </>
   );
 }
