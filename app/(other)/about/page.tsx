@@ -43,6 +43,17 @@ const About = () => {
               styling.
             </span>
           </p>
+
+          <div className="mt-10">
+            <p
+              className="  text-6xl md:text-7xl lg:text-8"
+              style={{ fontSize: "calc(clamp(3.25em, 7vw, 8em) * .375)" }}
+            >
+              <AnimatedTextWord text="Stack Familiar" />
+            </p>
+            <p>ReactJs</p>
+            <p>ReactJs</p>
+          </div>
         </div>
       </div>
     </main>

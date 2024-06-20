@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
   return (
     <Inner>
-      <AnimatePresence mode="wait">{isLoaded && <Preloader />}</AnimatePresence>
+      {/* <AnimatePresence mode="wait">{isLoaded && <Preloader />}</AnimatePresence> */}
       <Landing />
       <Descriptinon />
       <MovingText />

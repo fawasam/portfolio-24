@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://fawasam.me/",
-    title: "StudentFlow",
+    title: "Fawas a m",
     description:
       "I am a Calicut-based UX/UI designer and Software developer with an MSc in Computer Science.",
     images: [
