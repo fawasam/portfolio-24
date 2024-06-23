@@ -36,12 +36,14 @@ export default function Contact() {
             <AnimatedTextWord text="together" />
           </h2>
           <motion.div className={styles.buttonContainer}>
-            <Rounded backgroundColor={"#334BD3"} className={styles.button}>
-              <p className="text-[20px]">
-                {" "}
-                <AnimatedTextWord text="Get in touch" />
-              </p>
-            </Rounded>
+            <Link href="/contact">
+              <Rounded backgroundColor={"#334BD3"} className={styles.button}>
+                <p className="text-[20px]">
+                  {" "}
+                  <AnimatedTextWord text="Get in touch" />
+                </p>
+              </Rounded>
+            </Link>
           </motion.div>
           <motion.svg
             style={{ rotate, scale: 2 }}

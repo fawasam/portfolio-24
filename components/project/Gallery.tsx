@@ -17,7 +17,7 @@ export default function Gallery() {
           <div className="text-left">
             {/* <h1 className="text-4xl items-left">Projects</h1> */}
           </div>
-          {projects.map((project, index) => {
+          {projects.slice(0, 4).map((project, index) => {
             return (
               <Project
                 index={index}

@@ -29,7 +29,7 @@ const slider2 = [
   },
   {
     color: "#e5e0e1",
-    src: "mydegree2.png",
+    src: "foodies.png",
   },
   {
     color: "#d7d4cf",

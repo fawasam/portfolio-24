@@ -23,4 +23,10 @@ export const projects = [
     color: "#fff",
     link: "https://shoe-store-stall.vercel.app/",
   },
+  {
+    title: "Food Ordering App",
+    src: "foodies.png",
+    color: "#fff",
+    link: "/",
+  },
 ];

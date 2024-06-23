@@ -1,4 +1,5 @@
 import AnimatedTextWord from "@/common/TextAnimation";
+import Image from "next/image";
 import React from "react";
 const About = () => {
   return (
@@ -46,13 +47,17 @@ const About = () => {
 
           <div className="mt-10">
             <p
-              className="  text-6xl md:text-7xl lg:text-8"
+              className="  text-6xl md:text-7xl lg:text-8 mb-6"
               style={{ fontSize: "calc(clamp(3.25em, 7vw, 8em) * .375)" }}
             >
-              <AnimatedTextWord text="Stack Familiar" />
+              Stack Familiar
             </p>
-            <p>ReactJs</p>
-            <p>ReactJs</p>
+            <Image
+              src={"/images/icons/typescript.png"}
+              width={50}
+              height={50}
+              alt="logo"
+            />
           </div>
         </div>
       </div>
