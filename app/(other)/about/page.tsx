@@ -45,20 +45,34 @@ const About = () => {
             </span>
           </p>
 
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <p
               className="  text-6xl md:text-7xl lg:text-8 mb-6"
               style={{ fontSize: "calc(clamp(3.25em, 7vw, 8em) * .375)" }}
             >
               Stack Familiar
             </p>
-            <Image
-              src={"/images/icons/typescript.png"}
-              width={50}
-              height={50}
-              alt="logo"
-            />
-          </div>
+            <div className="flex gap-4 ">
+              <Image
+                src={"/images/icons/mern.png"}
+                width={100}
+                height={100}
+                alt="logo"
+              />
+              <Image
+                src={"/images/icons/typescript.png"}
+                width={100}
+                height={100}
+                alt="logo"
+              />
+              <Image
+                src={"/images/icons/nextjs.png"}
+                width={100}
+                height={100}
+                alt="logo"
+              />
+            </div>
+          </div> */}
         </div>
       </div>
     </main>
